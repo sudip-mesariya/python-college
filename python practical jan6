@@ -49,9 +49,13 @@ else:
     print(f"{number} is not an Armstrong number.")
 
 #function
+x = "python"
 def dis():
     x = "java"
     print(x)
-disc()
 
+def display():
+    print(x)
 
+dis()
+display()
