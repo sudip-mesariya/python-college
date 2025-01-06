@@ -1,0 +1,52 @@
+
+#even odd program
+a = int(input("enter value"))
+if a%2==0:
+    print("number is even")
+else:
+    print("number is odd")
+
+#prime number
+number = int(input("enter value"))
+is_prime = True
+
+if number > 1:
+    for i in range(2, number):
+        if number % i == 0:
+            is_prime = False
+            break
+else:
+    is_prime = False
+
+if is_prime:
+    print("number is a prime number.")
+else:
+    print("number is not a prime number.")
+
+#palindrom
+number = int(input("Enter a number: "))
+reverse = int(str(number)[::-1])
+
+if number == reverse:
+    print("number is  palindrome ")
+else:
+    print("number is not palindrome ")
+
+
+#amstrong
+number = int(input("Enter a number: "))
+sum_of_digits = 0
+temp = number
+
+while temp > 0:
+    digit = temp % 10
+    sum_of_digits += digit ** 3
+    temp = temp // 10
+
+if number == sum_of_digits:
+    print(f"{number} is an Armstrong number.")
+else:
+    print(f"{number} is not an Armstrong number.")
+
+
+
