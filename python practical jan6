@@ -48,5 +48,10 @@ if number == sum_of_digits:
 else:
     print(f"{number} is not an Armstrong number.")
 
+#function
+def dis():
+    x = "java"
+    print(x)
+disc()
 
 
